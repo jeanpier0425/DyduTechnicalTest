@@ -11,7 +11,6 @@ import net.serenitybdd.screenplay.waits.WaitUntil;
 
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 import static user_interface.CreateBotPage.*;
-import static user_interface.TemporlPage.BTN_INACTIVE;
 
 public class Create implements Task {
 
@@ -27,14 +26,12 @@ public class Create implements Task {
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
                 Click.on(LST_BOTS),
-/*                Click.on(BTN_CREATE_BOT),
+                Click.on(BTN_CREATE_BOT),
                 Enter.theValue(nameBot).into(TXT_BOT_NAME),
                 SelectFromOptions.byValue(language).from(LST_LANGUAGE),
-                Click.on(BTN_CREATE),*/
-/*                WaitUntil.the(LST_BOTS, isVisible()),
-                Click.on(LST_BOTS),*/
-//button temporal
-                Click.on(BTN_INACTIVE),
+                Click.on(BTN_CREATE),
+                WaitUntil.the(LST_BOTS, isVisible()),
+                Click.on(LST_BOTS),
                 Click.on(LBL_BOT.of(nameBot))
         );
     }

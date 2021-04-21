@@ -8,8 +8,10 @@ Feature: Create knowledge
     When The user logs in with user <user> and with password <password>
     And  It creates bot with name <nameBot> and language <language>
     And  It creates new knowledge with the request <request> and answer <answer>
+    And  The user tests the bot with the request <request>
+    Then The bot response must match the saved response <answer>
 
 
     Examples:
-      | user         | password      | nameBot        | language | request                           | answer                           |
-      | qa@dydu-c.ai | 52)4}2QMsP+np | JhamAlzate_001 | English  | I dgdfgdgdgdfg | What dgfd would you like?? |
+      | user         | password      | nameBot        | language | request                   | answer                        |
+      | qa@dydu-c.ai | 52)4}2QMsP+np | JhamAlzate_002 | English  | I need to make a transfer | What is your account number?? |

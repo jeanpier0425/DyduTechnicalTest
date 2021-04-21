@@ -3,11 +3,11 @@
   <properties/>
   <system-out><![CDATA[
 1 Scenarios (?[32m1 passed?[0m)
-4 Steps (?[32m4 passed?[0m)
-2m9,697s
+6 Steps (?[32m6 passed?[0m)
+0m54,030s
 
 ]]></system-out>
-  <system-err><![CDATA[2108 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+  <system-err><![CDATA[2569 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
 
 -------------------------------------------------------------------------------------
      _______. _______ .______       _______ .__   __.  __  .___________.____    ____ 
@@ -24,8 +24,8 @@
  Learn Serenity BDD online at http://serenity-dojo.com                               
 -------------------------------------------------------------------------------------
 
-2156 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - Test Suite Started: Create knowledge
-2445 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+2603 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - Test Suite Started: Create knowledge
+2871 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
  _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
 |_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
   | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
@@ -35,6 +35,6 @@
 
 TEST STARTED: Create knowledge successfully
 -------------------------------------------------------------------(create-knowledge;create-knowledge-successfully)
-132446 [pool-2-thread-1] INFO net.thucydides.core.requirements.PackageRequirementsTagProvider - Loading requirements from package requirements at: net.thucydides.showcase.cucumber.junit
+57077 [pool-2-thread-1] INFO net.thucydides.core.requirements.PackageRequirementsTagProvider - Loading requirements from package requirements at: net.thucydides.showcase.cucumber.junit
 ]]></system-err>
 </testsuite>

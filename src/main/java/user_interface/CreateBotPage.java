@@ -8,7 +8,7 @@ import static org.openqa.selenium.By.xpath;
 public class CreateBotPage {
 
     public static final Target LST_BOTS =
-            the("list bots").located(xpath("//span[@id='selectedBot']"));
+            the("list bots").located(xpath("//span[@id='selectedBot']/.."));
 
     public static final Target BTN_CREATE_BOT =
             the("button create bot").located(xpath("//button[@class='button button_primary button_wide']"));

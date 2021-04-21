@@ -31,5 +31,4 @@ public class Login implements Task {
     public static Performable inThePage(String user, String pass){
         return Tasks.instrumented(Login.class,user,pass);
     }
-
 }

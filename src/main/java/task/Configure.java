@@ -7,11 +7,9 @@ import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.actions.JavaScriptClick;
-import net.serenitybdd.screenplay.waits.Wait;
 import net.serenitybdd.screenplay.waits.WaitUntil;
 
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isClickable;
-import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 import static user_interface.CreateNewKnowledgePage.*;
 
 public class Configure implements Task {
@@ -39,10 +37,9 @@ public class Configure implements Task {
                 Enter.theValue(answer).into(TXT_ANSWER),
                 Click.on(BTN_UPDATE)
         );
-    }
+      }
 
-    public static Performable aNewKnowledge(String request, String answer){
-        return Tasks.instrumented(Configure.class,request,answer);
+    public static Performable aNewKnowledge(String request, String answer) {
+        return Tasks.instrumented(Configure.class, request, answer);
     }
-
 }

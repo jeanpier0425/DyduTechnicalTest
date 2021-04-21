@@ -11,9 +11,6 @@ public class OpenBrowser implements Interaction {
 
     private LoginPage loginPage;
 
-    public OpenBrowser() {
-    }
-
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(Open.browserOn(loginPage));
